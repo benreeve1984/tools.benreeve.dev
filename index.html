@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tools.benreeve.dev</title>
+<meta name="description" content="Standalone tools by Ben Reeve.">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --fg: #1a1a1a;
+    --muted: #6b6356;
+    --accent: #5a3a1a;
+    --rule: rgba(0, 0, 0, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1a;
+      --fg: #e8e4dc;
+      --muted: #9a9286;
+      --accent: #d4a574;
+      --rule: rgba(255, 255, 255, 0.08);
+    }
+  }
+  html { background: var(--bg); }
+  body {
+    color: var(--fg);
+    font-family: "Iowan Old Style", "Charter", "Palatino", "Georgia", serif;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 24px 64px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 0.6em;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 1.2em; }
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  a:hover { text-underline-offset: 5px; }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.2em;
+  }
+  li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  li:last-child { border-bottom: 0; }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .empty {
+    color: var(--muted);
+    font-style: italic;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 3em 0 2em;
+  }
+  footer {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>Tools</h1>
+
+<p>Standalone single-page tools. Each one is a self-contained HTML file &mdash; click through to use it, or follow the source link to read the code.</p>
+
+<p class="empty">Nothing here yet.</p>
+
+<!--
+  When adding a tool, copy this template into a <ul> above:
+
+  <ul>
+    <li>
+      <a href="/tool-slug.html">Tool name</a>
+      <span class="meta">&middot; short description &middot; <a href="https://github.com/benreeve1984/tools.benreeve.dev/commits/main/tool-slug.html">history</a></span>
+    </li>
+  </ul>
+-->
+
+<hr>
+
+<footer>
+  <a href="https://benreeve.dev">benreeve.dev</a> &middot;
+  <a href="https://github.com/benreeve1984/tools.benreeve.dev">Source</a>
+</footer>
+
+</body>
+</html>
