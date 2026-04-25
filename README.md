@@ -2,8 +2,6 @@
 
 Source for [tools.benreeve.dev](https://tools.benreeve.dev) — standalone single-page tools, each living as its own self-contained HTML file.
 
-Modelled on [tools.simonwillison.net](https://tools.simonwillison.net).
-
 ## Stack
 
 - Plain HTML (and inline CSS/JS as needed per tool), no framework, no build step
