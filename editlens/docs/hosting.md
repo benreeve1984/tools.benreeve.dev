@@ -1,6 +1,6 @@
 # Hosting
 
-EditLens is hosted as a static GitHub Pages page with Cloudflare in front of it.
+EditLens is prepared as a static GitHub Pages page with Cloudflare in front of it. The public demo is currently disabled; these notes are for restoring it later.
 
 ## Current shape
 
@@ -8,6 +8,7 @@ EditLens is hosted as a static GitHub Pages page with Cloudflare in front of it.
 - Custom domain: `tools.benreeve.dev`
 - DNS: Cloudflare proxied `CNAME` to `benreeve1984.github.io`
 - Model artifacts: Hugging Face model repo `benreeve/editlens-roberta-large-onnx-int8`
+- Runnable draft page source: `editlens/index.draft.html.txt`
 
 GitHub Pages cannot set custom HTTP response headers. For EditLens, Cloudflare must add the response headers that enable cross-origin isolation for faster ONNX Runtime Web execution.
 

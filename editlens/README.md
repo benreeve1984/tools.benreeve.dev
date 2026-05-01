@@ -6,14 +6,14 @@ This is a research reproduction, not a product for enforcing AI-use policies.
 
 ## Current status
 
-- Browser UI: implemented at `/editlens/`
+- Browser UI: archived at `index.draft.html.txt`, not currently published
 - Model loader: configured for `benreeve/editlens-roberta-large-onnx-int8`
 - Conversion scripts: included in `pipeline/`
 - Validation: complete on the filtered `pangram/editlens_iclr` test split
 - Publishing: complete at <https://huggingface.co/benreeve/editlens-roberta-large-onnx-int8>
 - Browser smoke: Chromium loaded the real Hugging Face model and completed paragraph scoring locally
 
-Load `/editlens/?mock=1` to exercise the interface with fake scores without downloading the 358 MB ONNX model.
+The public demo is intentionally disabled for now because the model output is not reliable enough for a public tool. See `RESTORE.md` for the short path to re-enable it later.
 
 ## Runtime architecture
 
@@ -67,7 +67,7 @@ python 04_quantize.py
 python 05_validate.py
 ```
 
-`04_quantize.py` writes a Transformers.js-compatible repo folder to `artifacts/04_web_repo/`. Upload that folder to the Hugging Face model repo named in `editlens/index.html`.
+`04_quantize.py` writes a Transformers.js-compatible repo folder to `artifacts/04_web_repo/`. Upload that folder to the Hugging Face model repo named in `editlens/index.draft.html.txt`.
 
 The original planning spec assumed the Pangram release was a PEFT adapter that had to be merged into `FacebookAI/roberta-large`. The gated repo currently contains a full RoBERTa sequence-classification checkpoint with four labels, so `02_merge.py` copies it through directly. If Pangram ships a PEFT-only checkpoint later, the script still has a merge path.
 
